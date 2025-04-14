@@ -65,11 +65,11 @@ Ask Claude things like:
 
 ## 🧾 File Structure
    
-   ```bash
-   main.py          # MCP server implementation
-   notes.txt        # Auto-generated file storing notes
+      ```bashbash
+      main.py          # MCP server implementation
+      notes.txt        # Auto-generated file storing notes
 
-## 📚 Tools and Concepts Used
+📚 Tools and Concepts Used
 FastMCP
 
 @mcp.tool – For executable functions

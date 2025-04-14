@@ -26,52 +26,50 @@ This project is a minimal **MCP (Message Control Protocol)** server built in Pyt
 
    # macOS/Linux
    curl -LsSf https://astral.sh/uv/install.sh | sh
-Initialize a new project
 
-bash
-Copy
-Edit
-uv init .
-Install dependencies
+2. **Initialize a new project**
 
-bash
-Copy
-Edit
-uv add mcp-cli
-Run the MCP server
+   ```bash
+   uv init . |sh
 
-bash
-Copy
-Edit
-uv run mcp install main.py
-Integrate with Claude Desktop
+3. **Install dependencies**
 
-Open Claude Desktop
+   ```bash
+   uv add mcp-cli
 
-Go to Settings > Developer > Edit Config
+4. **Run the MCP server**
 
-Add your MCP server using the generated uv command
+   ```bash
+   uv run mcp install main.py
 
-Restart Claude
+5. **Integrate with Claude Desktop**
 
-✨ Usage
+   Open Claude Desktop
+   
+   Go to Settings > Developer > Edit Config
+   
+   Add your MCP server using the generated uv command
+   
+   Restart Claude
+
+## ✨ Usage
 Ask Claude things like:
 
-"Add a note saying 'Meeting at 3 PM'"
+   "Add a note saying 'Meeting at 3 PM'"
+   
+   "Read all my notes"
+   
+   "What’s the latest note?"
+   
+   "Summarize my notes"
 
-"Read all my notes"
+## 🧾 File Structure
+   
+   ```bash
+   main.py          # MCP server implementation
+   notes.txt        # Auto-generated file storing notes
 
-"What’s the latest note?"
-
-"Summarize my notes"
-
-🧾 File Structure
-bash
-Copy
-Edit
-main.py          # MCP server implementation
-notes.txt        # Auto-generated file storing notes
-📚 Tools and Concepts Used
+## 📚 Tools and Concepts Used
 FastMCP
 
 @mcp.tool – For executable functions
@@ -83,3 +81,10 @@ FastMCP
 Claude Desktop integration
 
 🧠 Ideas for Future Enhancements
+Multi-user note support
+
+Add timestamps to notes
+
+Search notes by keyword
+
+AI-generated tags or categories
